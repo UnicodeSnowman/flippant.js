@@ -8,8 +8,6 @@ with the compile function in directives to know). Instead, Im forking this to us
 that is already present in the DOM as the back-side element, and simply passing a reference to this element
 into flip(). so far so good...
 
-- UnicodeSnowman
-
 Demonstrations:
 ===============
 
