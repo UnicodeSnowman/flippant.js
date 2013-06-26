@@ -22,9 +22,9 @@ function flip(flipper, content, type, class_name, timeout) {
   }
 
   back = document.createElement('div')
-  document.body.appendChild(back)
+  //document.body.appendChild(back)
   set_styles(back, flipper, position)
-  back.innerHTML = content
+  //back.innerHTML = content
 
   flipper.classList.add('flippant')
   back.classList.add('flippant-back')
@@ -52,7 +52,7 @@ function flip(flipper, content, type, class_name, timeout) {
     flipper.classList.remove('flipped')
     window.setTimeout(function () {
       back.classList.remove(class_name)
-      document.body.removeChild(back)
+      //document.body.removeChild(back)
     }, timeout)
   }
 

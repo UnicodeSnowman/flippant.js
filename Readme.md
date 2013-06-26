@@ -1,3 +1,15 @@
+What the fork?
+===============
+
+I was having issues integrating with AngularJS in a directive, so I forked this. Due to the way that flippant.js
+creates the back-side HTML from a template/innerHTML on the fly when flip() is called, passing in a bound Angular
+fragment does not work without some fancy re-compilation (which may or may not be possible... Im not good enough
+with the compile function in directives to know). Instead, Im forking this to use an existing hidden element
+that is already present in the DOM as the back-side element, and simply passing a reference to this element
+into flip(). so far so good...
+
+- UnicodeSnowman
+
 Demonstrations:
 ===============
 
