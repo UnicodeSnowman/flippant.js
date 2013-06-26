@@ -21,10 +21,8 @@ function flip(flipper, content, type, class_name, timeout) {
     style_func = card_styles
   }
 
-  back = document.createElement('div')
-  //document.body.appendChild(back)
+  back = content;
   set_styles(back, flipper, position)
-  //back.innerHTML = content
 
   flipper.classList.add('flippant')
   back.classList.add('flippant-back')
@@ -52,7 +50,6 @@ function flip(flipper, content, type, class_name, timeout) {
     flipper.classList.remove('flipped')
     window.setTimeout(function () {
       back.classList.remove(class_name)
-      //document.body.removeChild(back)
     }, timeout)
   }
 
